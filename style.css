@@ -6,6 +6,7 @@
     border: 0;
 
     --main-color: #786886;
+    --secondary-color: #d1d1d1;
 }
 
 h1 {
@@ -13,16 +14,14 @@ h1 {
     font-size: 35px;
     color: var(--main-color);
     padding: 30px;
-
-    text-transform: uppercase;
-
     display: flex;
     align-items: center;
     justify-content: center;
+    filter: brightness(50%);
 }
 
 body {
-    background: #f1e4fc;
+    background: var(--secondary-color);
 
     font-family: "Roboto";
     color: var(--main-color)
@@ -30,7 +29,7 @@ body {
 
 body header {
     background: var(--main-color);
-    padding: 30px;
+    padding: 20px;
 
     text-align: center;
 }
@@ -47,7 +46,7 @@ body header a+a {
 }
 
 body header a:hover {
-    color: #f1e4fc;
+    color: var(--secondary-color);
     text-decoration: underline;
 }
 
@@ -58,6 +57,17 @@ body header a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    color: var(--main-color);
+}
+
+#wrapper h1,
+#wrapper h3 {
+    filter: brightness(50%);
+}
+
+#wrapper h3 {
+    margin: 15px;
 }
 
 #wrapper .logo {
@@ -68,21 +78,19 @@ body header a:hover {
     margin-top: 30px;
 }
 
-#wrapper h2 {
+#wrapper p,
+#wrapper li {
     font-size: 18px;
     font-weight: 400;
 
     max-width: 600px;
-    margin: auto;
-}
+    margin: 0 auto 15px auto;
 
-#wrapper h3 {
-    margin-top: 30px;
+    filter: brightness(60%);
 }
 
 #wrapper ul {
     font-weight: 400;
-    margin-top: 5px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -94,7 +102,7 @@ body header a:hover {
 }
 
 #wrapper #socials {
-    margin: 32px;
+    margin: 20px;
 }
 
 #wrapper #socials a+a {
@@ -123,13 +131,13 @@ body header a:hover {
 }
 
 .card {
-    background: #78688625;
+    background: var(--main-color);
     text-align: center;
-    height: 300px;
+    height: 330px;
 
     border-radius: 20px;
 
-    color: var(--main-color);
+    color: white;
 }
 
 .post-image {
@@ -141,6 +149,7 @@ body header a:hover {
 .post-title,
 .post-info {
     font-size: 15px;
+    line-height: 25px;
     padding: 15px;
 }
 
