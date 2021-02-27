@@ -123,24 +123,32 @@ body header a:hover {
 .card {
     background: #78688625;
     text-align: center;
+    height: 300px;
+
+    border-radius: 20px;
 
     color: var(--main-color);
 }
 
 .post-image {
     width: 100%;
+
+    border-radius: 20px 20px 0 0;
 }
 
 .post-title,
 .post-info {
     font-size: 15px;
-    padding: 10px;
+    padding: 15px;
 }
 
 .post-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6px;
+
+    position: absolute;
+    bottom: 0;
 }
 
 .reading-time {
