@@ -170,6 +170,14 @@ body header a:hover {
     
     position: fixed;
     top: 0;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal-content {
@@ -188,4 +196,5 @@ body header a:hover {
     top: 5px;
 
     height: 10px;
+    cursor: pointer;
 }
