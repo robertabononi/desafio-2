@@ -140,6 +140,10 @@ body header a:hover {
     color: white;
 }
 
+.card:hover {
+    cursor: pointer;
+}
+
 .post-image {
     width: 100%;
 
