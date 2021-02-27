@@ -13,8 +13,31 @@ body {
     text-align: center;
 }
 
+body header {
+    background: #786886;
+    padding: 30px;
+
+    text-align: center;
+}
+
+body header a {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+body header a+a {
+    margin-left: 30px;
+}
+
+body header a:hover {
+    color: #f1e4fc;
+    text-decoration: underline;
+}
+
 #wrapper .logo {
-    height: 200px;
+    height: 160px;
     border-radius: 50%;
     border: 3px solid #1cbd44;
 
@@ -24,7 +47,7 @@ body {
 #wrapper h1 {
     font-size: 40px;
     font-weight: 700;
-    margin-top: 32px;
+    margin-top: 25px;
 }
 
 #wrapper h2 {
@@ -32,7 +55,7 @@ body {
     font-weight: 400;
 
     max-width: 600px;
-    margin: 32px auto;
+    margin: 25px auto;
 }
 
 #wrapper ul {
@@ -53,7 +76,7 @@ body {
 }
 
 #wrapper #socials a+a {
-    margin-left: 10px
+    margin-left: 15px
 }
 
 #wrapper #socials a img {
@@ -61,5 +84,5 @@ body {
 }
 
 #wrapper #socials a img:hover {
-    height: 35px;
+    transform: scale(1.4, 1.4)
 }
