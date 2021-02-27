@@ -4,16 +4,30 @@
     margin: 0;
     padding: 0;
     border: 0;
+
+    --main-color: #786886;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--main-color);
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 body {
     background: #f1e4fc;
 
     font-family: "Roboto";
+    color: var(--main-color)
 }
 
 body header {
-    background: #786886;
+    background: var(--main-color);
     padding: 30px;
 
     text-align: center;
@@ -33,4 +47,106 @@ body header a+a {
 body header a:hover {
     color: #f1e4fc;
     text-decoration: underline;
+}
+
+/* Wrapper */
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrapper .logo {
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid #1cbd44;
+
+    margin-top: 30px;
+}
+
+#wrapper h2 {
+    font-size: 18px;
+    font-weight: 400;
+
+    max-width: 600px;
+    margin: auto;
+}
+
+#wrapper h3 {
+    margin-top: 30px;
+}
+
+#wrapper ul {
+    font-weight: 400;
+    margin-top: 5px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrapper ul li+li {
+    margin-left: 20px;
+}
+
+#wrapper #socials {
+    margin: 32px;
+}
+
+#wrapper #socials a+a {
+    margin-left: 15px
+}
+
+#wrapper #socials a img {
+    height: 30px;
+}
+
+#wrapper #socials a img:hover {
+    transform: scale(1.4, 1.4)
+}
+
+/*Cards*/
+
+.cards-container {
+    max-width: 800px;
+    position: relative;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.card {
+    background: #78688625;
+    text-align: center;
+
+    color: var(--main-color);
+}
+
+.post-image {
+    width: 100%;
+}
+
+.post-title,
+.post-info {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.post-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+}
+
+.reading-time {
+    background: var(--main-color);
+    filter: brightness(90%);
+    color: white;
+    font-weight: 300;
+    border-radius: 20px;
 }
