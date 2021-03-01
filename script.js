@@ -12,8 +12,11 @@ document.querySelector('.close-modal').addEventListener('click', function() {
 })
 
 const modalContent = document.querySelector('.modal-content');
-const maximizeModal = document.querySelector('.maximize-modal');
 
-maximizeModal.addEventListener('click', function() {
-    modalContent.classList.add('active');
+document.querySelector('.maximize-modal').addEventListener('click', function() {
+    if (modalContent.classList.contains('active')) {
+        modalContent.classList.remove('active');
+    } else {
+        modalContent.classList.add('active');
+    }
 })
