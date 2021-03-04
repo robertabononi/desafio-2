@@ -50,6 +50,19 @@ body header a:hover {
     text-decoration: underline;
 }
 
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 90vh;
+
+}
+
+#content img {
+    height: 200px;
+}
+
 /* Wrapper */
 
 #wrapper {
